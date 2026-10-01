@@ -2,18 +2,20 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Indique e Ganhe</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 w-full overflow-x-hidden">
 
 <!-- HERO -->
-<section class="text-center py-16 px-4">
-  <h1 class="text-4xl font-bold text-green-600">
+<section class="text-center py-16 px-6">
+  <h1 class="text-3xl md:text-4xl font-bold text-green-600">
     💸 Indique amigos e ganhe R$50
   </h1>
-  <p class="mt-4 text-lg">
+
+  <p class="mt-4 text-base md:text-lg">
     Ganhe dinheiro indicando novos alunos para o Instituto Mix
   </p>
 
@@ -23,45 +25,68 @@
 </section>
 
 <!-- CURSOS -->
-<section class="bg-white py-12 text-center">
+<section class="bg-white py-12 text-center px-6">
   <h2 class="text-2xl font-bold mb-6">O que você pode indicar</h2>
 
-  <p>📚 Cursos Profissionalizantes (Presencial e EAD)</p>
-  <p>🛠️ Cursos Técnicos</p>
-  <p>🎓 Superior em Tecnologia</p>
-  <p>🏫 Faculdades</p>
-  <p>📖 EJA - Ensino Médio</p>
+  <div class="space-y-2">
+    <p>📚 Cursos Profissionalizantes (Presencial e EAD)</p>
+    <p>🛠️ Cursos Técnicos</p>
+    <p>🎓 Superior em Tecnologia</p>
+    <p>🏫 Faculdades</p>
+    <p>📖 EJA - Ensino Médio</p>
+  </div>
 </section>
 
 <!-- COMO FUNCIONA -->
-<section class="py-12 text-center">
+<section class="py-12 text-center px-6">
   <h2 class="text-2xl font-bold mb-6">Como funciona</h2>
 
-  <p>1. Você indica um amigo</p>
-  <p>2. Ele se matricula</p>
-  <p>3. Ele quita a matrícula</p>
-  <p>4. Você recebe R$50 💰</p>
+  <div class="space-y-2">
+    <p>1. Você indica um amigo</p>
+    <p>2. Ele se matricula</p>
+    <p>3. Ele quita a matrícula</p>
+    <p>4. Você recebe R$50 💰</p>
+  </div>
 </section>
 
 <!-- FORM -->
-<section id="form" class="bg-white py-12 text-center">
-  <h2 class="text-2xl font-bold mb-6">Faça sua indicação</h2>
+<section id="form" class="bg-white py-12 text-center px-4">
+  <h2 class="text-2xl font-bold mb-4">Faça sua indicação</h2>
+
+  <p class="mb-6 text-gray-600">
+    Leva menos de 1 minuto e pode te render R$50 💸
+  </p>
 
   <div class="flex justify-center">
     <iframe 
       src="https://docs.google.com/forms/d/e/1FAIpQLSdMU0O-CRbGYmel4b43iHetudYayzJ--sBICpyphzCug5vN0w/viewform?embedded=true"
-      width="100%" 
-      height="1160" 
-      class="rounded-lg shadow">
+      class="w-full max-w-2xl"
+      height="1400"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0">
+      Carregando…
     </iframe>
   </div>
-
 </section>
 
 <!-- RANKING -->
-<section class="py-12 text-center">
+<section class="py-12 text-center px-6">
   <h2 class="text-2xl font-bold mb-4">Ranking</h2>
-  <p>Em breve os melhores indicadores aparecerão aqui 🏆</p>
+  <p class="text-gray-600">
+    Em breve os melhores indicadores aparecerão aqui 🏆
+  </p>
+</section>
+
+<!-- CTA FINAL -->
+<section class="py-16 text-center px-6">
+  <h2 class="text-2xl font-bold">
+    Comece agora e transforme indicações em dinheiro 💸
+  </h2>
+
+  <a href="#form" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg">
+    Quero indicar
+  </a>
 </section>
 
 </body>
