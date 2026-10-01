@@ -1,93 +1,609 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indique e Ganhe</title>
+
+  <title>Indique e Ganhe | Instituto Mix</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero-bg {
+      background:
+        radial-gradient(circle at 90% 20%, rgba(255, 193, 7, .25), transparent 25%),
+        radial-gradient(circle at 10% 80%, rgba(220, 0, 25, .18), transparent 25%),
+        linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%);
+    }
+
+    .red-gradient {
+      background: linear-gradient(135deg, #d90018, #a90013);
+    }
+
+    .dark-gradient {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(220, 0, 25, .35), transparent 25%),
+        radial-gradient(circle at 90% 80%, rgba(255, 193, 7, .15), transparent 25%),
+        #111111;
+    }
+
+    .yellow-gradient {
+      background: linear-gradient(135deg, #ffd600, #ffb800);
+    }
+
+    .shadow-card {
+      box-shadow: 0 12px 35px rgba(0, 0, 0, .10);
+    }
+
+    .hover-card {
+      transition: all .25s ease;
+    }
+
+    .hover-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, .14);
+    }
+
+    .pulse-button {
+      transition: all .25s ease;
+    }
+
+    .pulse-button:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 12px 25px rgba(217, 0, 24, .25);
+    }
+  </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800 w-full overflow-x-hidden">
 
+<body class="bg-gray-50 text-gray-900 w-full overflow-x-hidden">
+
+
+<!-- ========================================================= -->
+<!-- TOPO -->
+<!-- ========================================================= -->
+
+<header class="bg-[#111111] px-5 py-4">
+
+  <div class="max-w-6xl mx-auto flex items-center justify-between gap-4">
+
+    <img
+      src="logo-instituto-mix.png"
+      alt="Instituto Mix Flores da Cunha"
+      class="w-40 md:w-52 object-contain"
+    >
+
+    <div class="hidden sm:block text-right text-white">
+      <p class="text-sm font-semibold">
+        Seu futuro
+      </p>
+
+      <p class="text-sm text-yellow-400 font-bold">
+        começa aqui!
+      </p>
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================================= -->
 <!-- HERO -->
-<section class="text-center py-16 px-6">
-  <h1 class="text-3xl md:text-4xl font-bold text-green-600">
-    💸 Indique amigos e ganhe R$50
-  </h1>
+<!-- ========================================================= -->
 
-  <p class="mt-4 text-base md:text-lg">
-    Ganhe dinheiro indicando novos alunos para o Instituto Mix
-  </p>
+<section class="hero-bg relative overflow-hidden">
 
-  <a href="#form" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg">
-    Começar agora
-  </a>
+  <div class="max-w-6xl mx-auto px-6 py-14 md:py-20">
+
+    <div class="max-w-3xl mx-auto text-center">
+
+      <div class="inline-block red-gradient text-white px-5 py-2 rounded-full font-bold text-sm md:text-base mb-5 shadow-lg">
+        🎁 PROGRAMA DE INDICAÇÕES
+      </div>
+
+      <h1 class="font-black leading-tight">
+
+        <span class="block text-3xl md:text-5xl text-gray-900">
+          Indique amigos e
+        </span>
+
+        <span class="inline-block mt-2 yellow-gradient text-black px-5 py-2 rounded-xl text-4xl md:text-6xl shadow-lg">
+          ganhe R$50
+        </span>
+
+      </h1>
+
+      <p class="mt-7 text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
+        Ganhe dinheiro indicando novos alunos para o
+        <strong>Instituto Mix</strong>
+      </p>
+
+      <a
+        href="#form"
+        class="pulse-button inline-flex items-center justify-center mt-8 red-gradient text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg"
+      >
+        Começar agora
+        <span class="ml-3 text-xl">→</span>
+      </a>
+
+      <p class="mt-4 text-sm text-gray-500">
+        É rápido, simples e você pode ganhar R$50 por indicação.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- Elementos decorativos -->
+
+  <div class="absolute -right-16 top-20 w-40 h-40 rounded-full bg-red-600 opacity-10"></div>
+
+  <div class="absolute -left-20 bottom-0 w-48 h-48 rounded-full bg-yellow-400 opacity-10"></div>
+
 </section>
 
+
+
+<!-- ========================================================= -->
+<!-- BENEFÍCIO -->
+<!-- ========================================================= -->
+
+<section class="bg-white px-6 py-8">
+
+  <div class="max-w-5xl mx-auto">
+
+    <div class="red-gradient rounded-2xl shadow-card text-white px-6 py-8 md:px-10">
+
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+
+        <div>
+          <div class="text-4xl mb-2">👥</div>
+          <p class="font-bold">Você indica</p>
+          <p class="text-sm text-white/80">
+            Um amigo ou conhecido
+          </p>
+        </div>
+
+        <div>
+          <div class="text-4xl mb-2">🎓</div>
+          <p class="font-bold">Ele se matricula</p>
+          <p class="text-sm text-white/80">
+            Em um curso do Instituto Mix
+          </p>
+        </div>
+
+        <div>
+          <div class="text-4xl mb-2">💰</div>
+          <p class="font-bold">Você ganha R$50</p>
+          <p class="text-sm text-white/80">
+            Após a matrícula ser quitada
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ========================================================= -->
 <!-- CURSOS -->
-<section class="bg-white py-12 text-center px-6">
-  <h2 class="text-2xl font-bold mb-6">O que você pode indicar</h2>
+<!-- ========================================================= -->
 
-  <div class="space-y-2">
-    <p>📚 Cursos Profissionalizantes (Presencial e EAD)</p>
-    <p>🛠️ Cursos Técnicos</p>
-    <p>🎓 Superior em Tecnologia</p>
-    <p>🏫 Faculdades</p>
-    <p>📖 EJA - Ensino Médio</p>
+<section class="bg-white py-14 px-6">
+
+  <div class="max-w-6xl mx-auto">
+
+    <div class="text-center mb-10">
+
+      <div class="flex items-center justify-center gap-3 mb-3">
+
+        <span class="w-10 h-1 bg-red-600 rounded"></span>
+
+        <span class="w-5 h-1 bg-yellow-400 rounded"></span>
+
+      </div>
+
+      <h2 class="text-3xl md:text-4xl font-black">
+        O que você pode indicar
+      </h2>
+
+      <p class="mt-3 text-gray-600">
+        Indique novos alunos para qualquer uma destas opções:
+      </p>
+
+    </div>
+
+
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+
+
+      <!-- CARD 1 -->
+
+      <div class="hover-card bg-white border border-gray-100 rounded-2xl p-5 text-center shadow-card">
+
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-red-50 flex items-center justify-center text-3xl">
+          📚
+        </div>
+
+        <h3 class="font-bold text-sm">
+          Cursos
+          Profissionalizantes
+        </h3>
+
+        <p class="text-xs text-gray-500 mt-2">
+          Presencial e EAD
+        </p>
+
+      </div>
+
+
+      <!-- CARD 2 -->
+
+      <div class="hover-card bg-white border border-gray-100 rounded-2xl p-5 text-center shadow-card">
+
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-yellow-50 flex items-center justify-center text-3xl">
+          🛠️
+        </div>
+
+        <h3 class="font-bold text-sm">
+          Cursos
+          Técnicos
+        </h3>
+
+      </div>
+
+
+      <!-- CARD 3 -->
+
+      <div class="hover-card bg-white border border-gray-100 rounded-2xl p-5 text-center shadow-card">
+
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-red-50 flex items-center justify-center text-3xl">
+          🎓
+        </div>
+
+        <h3 class="font-bold text-sm">
+          Superior em
+          Tecnologia
+        </h3>
+
+      </div>
+
+
+      <!-- CARD 4 -->
+
+      <div class="hover-card bg-white border border-gray-100 rounded-2xl p-5 text-center shadow-card">
+
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-yellow-50 flex items-center justify-center text-3xl">
+          🏫
+        </div>
+
+        <h3 class="font-bold text-sm">
+          Faculdades
+        </h3>
+
+      </div>
+
+
+      <!-- CARD 5 -->
+
+      <div class="hover-card bg-white border border-gray-100 rounded-2xl p-5 text-center shadow-card col-span-2 md:col-span-1">
+
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-red-50 flex items-center justify-center text-3xl">
+          📖
+        </div>
+
+        <h3 class="font-bold text-sm">
+          EJA -
+          Ensino Médio
+        </h3>
+
+      </div>
+
+    </div>
+
   </div>
+
 </section>
 
+
+
+<!-- ========================================================= -->
 <!-- COMO FUNCIONA -->
-<section class="py-12 text-center px-6">
-  <h2 class="text-2xl font-bold mb-6">Como funciona</h2>
+<!-- ========================================================= -->
 
-  <div class="space-y-2">
-    <p>1. Você indica um amigo</p>
-    <p>2. Ele se matricula</p>
-    <p>3. Ele quita a matrícula</p>
-    <p>4. Você recebe R$50 💰</p>
+<section class="dark-gradient py-16 px-6 text-white">
+
+  <div class="max-w-6xl mx-auto">
+
+    <div class="text-center mb-12">
+
+      <div class="flex justify-center items-center gap-3 mb-4">
+
+        <span class="w-12 h-1 bg-red-500 rounded"></span>
+
+        <span class="w-8 h-1 bg-yellow-400 rounded"></span>
+
+      </div>
+
+      <h2 class="text-3xl md:text-4xl font-black">
+        Como funciona
+      </h2>
+
+      <p class="mt-3 text-gray-300">
+        É simples: indique, matricule e ganhe.
+      </p>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-4 gap-8">
+
+
+      <!-- PASSO 1 -->
+
+      <div class="text-center relative">
+
+        <div class="relative mx-auto w-20 h-20 rounded-full bg-red-600 flex items-center justify-center text-3xl shadow-lg">
+
+          👤
+
+          <span class="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-yellow-400 text-black text-sm font-black flex items-center justify-center">
+            1
+          </span>
+
+        </div>
+
+        <h3 class="mt-5 font-bold text-lg">
+          Você indica
+        </h3>
+
+        <p class="mt-2 text-sm text-gray-300">
+          Você indica um amigo.
+        </p>
+
+      </div>
+
+
+      <!-- PASSO 2 -->
+
+      <div class="text-center">
+
+        <div class="relative mx-auto w-20 h-20 rounded-full bg-yellow-400 text-black flex items-center justify-center text-3xl shadow-lg">
+
+          📝
+
+          <span class="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-red-600 text-white text-sm font-black flex items-center justify-center">
+            2
+          </span>
+
+        </div>
+
+        <h3 class="mt-5 font-bold text-lg">
+          Ele se matricula
+        </h3>
+
+        <p class="mt-2 text-sm text-gray-300">
+          Seu amigo realiza a matrícula.
+        </p>
+
+      </div>
+
+
+      <!-- PASSO 3 -->
+
+      <div class="text-center">
+
+        <div class="relative mx-auto w-20 h-20 rounded-full bg-red-600 flex items-center justify-center text-3xl shadow-lg">
+
+          💳
+
+          <span class="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-yellow-400 text-black text-sm font-black flex items-center justify-center">
+            3
+          </span>
+
+        </div>
+
+        <h3 class="mt-5 font-bold text-lg">
+          Ele quita a matrícula
+        </h3>
+
+        <p class="mt-2 text-sm text-gray-300">
+          A matrícula é devidamente quitada.
+        </p>
+
+      </div>
+
+
+      <!-- PASSO 4 -->
+
+      <div class="text-center">
+
+        <div class="relative mx-auto w-20 h-20 rounded-full bg-yellow-400 text-black flex items-center justify-center text-3xl shadow-lg">
+
+          💰
+
+          <span class="absolute -top-2 -left-2 w-8 h-8 rounded-full bg-red-600 text-white text-sm font-black flex items-center justify-center">
+            4
+          </span>
+
+        </div>
+
+        <h3 class="mt-5 font-bold text-lg">
+          Você recebe
+        </h3>
+
+        <p class="mt-2 text-2xl font-black text-yellow-400">
+          R$50
+        </p>
+
+      </div>
+
+    </div>
+
   </div>
+
 </section>
 
-<!-- FORM -->
-<section id="form" class="bg-white py-12 text-center px-4">
-  <h2 class="text-2xl font-bold mb-4">Faça sua indicação</h2>
 
-  <p class="mb-6 text-gray-600">
-    Leva menos de 1 minuto e pode te render R$50 💸
-  </p>
 
-  <div class="flex justify-center">
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSdMU0O-CRbGYmel4b43iHetudYayzJ--sBICpyphzCug5vN0w/viewform?embedded=true"
-      class="w-full max-w-2xl"
-      height="1400"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0">
-      Carregando…
-    </iframe>
+<!-- ========================================================= -->
+<!-- FORMULÁRIO -->
+<!-- ========================================================= -->
+
+<section id="form" class="bg-gray-50 py-16 px-4">
+
+  <div class="max-w-5xl mx-auto">
+
+
+    <div class="text-center mb-8">
+
+      <div class="inline-block bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
+        💰 VALE R$50
+      </div>
+
+      <h2 class="text-3xl md:text-4xl font-black">
+        Faça sua indicação
+      </h2>
+
+      <p class="mt-3 text-gray-600">
+        Leva menos de 1 minuto e pode te render
+        <strong class="text-red-600">R$50</strong>.
+      </p>
+
+    </div>
+
+
+    <div class="bg-white rounded-3xl shadow-card p-4 md:p-8">
+
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdMU0O-CRbGYmel4b43iHetudYayzJ--sBICpyphzCug5vN0w/viewform?embedded=true"
+        class="w-full"
+        height="1400"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Carregando…
+      </iframe>
+
+    </div>
+
   </div>
+
 </section>
 
+
+
+<!-- ========================================================= -->
 <!-- RANKING -->
-<section class="py-12 text-center px-6">
-  <h2 class="text-2xl font-bold mb-4">Ranking</h2>
-  <p class="text-gray-600">
-    Em breve os melhores indicadores aparecerão aqui 🏆
-  </p>
+<!-- ========================================================= -->
+
+<section class="bg-white py-14 px-6">
+
+  <div class="max-w-5xl mx-auto">
+
+    <div class="bg-gray-50 border border-gray-100 rounded-3xl shadow-card p-8 md:p-12 text-center">
+
+      <div class="text-5xl mb-5">
+        🏆
+      </div>
+
+      <h2 class="text-3xl font-black">
+        Ranking
+      </h2>
+
+      <p class="mt-4 text-gray-600 max-w-xl mx-auto">
+        Em breve os melhores indicadores aparecerão aqui.
+      </p>
+
+      <div class="mt-7 inline-block yellow-gradient text-black font-bold px-6 py-3 rounded-full">
+        🚀 Prepare-se para aparecer no ranking!
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
+
+
+<!-- ========================================================= -->
 <!-- CTA FINAL -->
-<section class="py-16 text-center px-6">
-  <h2 class="text-2xl font-bold">
-    Comece agora e transforme indicações em dinheiro 💸
-  </h2>
+<!-- ========================================================= -->
 
-  <a href="#form" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg">
-    Quero indicar
-  </a>
+<section class="relative overflow-hidden red-gradient text-white py-16 px-6">
+
+  <div class="max-w-4xl mx-auto text-center relative z-10">
+
+    <div class="mb-5">
+
+      <img
+        src="logo-instituto-mix.png"
+        alt="Instituto Mix"
+        class="w-44 mx-auto brightness-0 invert"
+      >
+
+    </div>
+
+    <h2 class="text-3xl md:text-5xl font-black leading-tight">
+
+      Comece agora e transforme
+      <span class="text-yellow-300">
+        indicações
+      </span>
+      em dinheiro 💰
+
+    </h2>
+
+    <a
+      href="#form"
+      class="pulse-button inline-flex items-center mt-8 yellow-gradient text-black font-black text-lg px-9 py-4 rounded-xl shadow-xl"
+    >
+      Quero indicar
+      <span class="ml-3 text-xl">→</span>
+    </a>
+
+  </div>
+
+  <div class="absolute -right-20 -bottom-20 w-72 h-72 bg-yellow-400 rounded-full opacity-10"></div>
+
+  <div class="absolute -left-20 -top-20 w-72 h-72 bg-black rounded-full opacity-20"></div>
+
 </section>
+
+
+
+<!-- ========================================================= -->
+<!-- RODAPÉ -->
+<!-- ========================================================= -->
+
+<footer class="bg-[#111111] text-gray-400 text-center py-6 px-6">
+
+  <p class="text-sm">
+    Instituto Mix de Profissões
+  </p>
+
+  <p class="text-xs mt-1">
+    Flores da Cunha - RS
+  </p>
+
+</footer>
+
 
 </body>
 </html>
